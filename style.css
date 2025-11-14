@@ -28,9 +28,11 @@ a {
     font-weight: 500;
     margin-bottom: 30px;
 }
-.content{
+
+.content {
     padding: 0 300px;
 }
+
 .title {
     text-align: center;
 }
@@ -71,9 +73,9 @@ nav {
     align-items: center;
     padding: 0 150px;
     background-color: white;
-    position: fixed;
+    position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 99999;
 }
 
 nav ul {
@@ -94,6 +96,10 @@ nav ul a:hover {
 nav h2 a {
     font-size: 20px;
     font-weight: 600;
+}
+
+.media-menu {
+    display: none;
 }
 
 /* header hissesi */
@@ -402,10 +408,11 @@ header a:hover {
 .contact-form button:hover {
     background-color: #7b2912;
 }
-.telephone i{
-font-size: 30px;
-color: #6c757d;
-margin: 50px 0 10px ;
+
+.telephone i {
+    font-size: 30px;
+    color: #6c757d;
+    margin: 50px 0 10px;
 }
 
 
@@ -420,4 +427,173 @@ footer p {
     font-size: 14px;
     color: #6c757d;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    /* nav  */
+    nav {
+        padding: 24px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .media-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        background: #fff;
+        color: #000;
+        border-radius: 10px;
+        font-size: 28px;
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    /* header  */
+    header {
+        padding-top: 160px;
+        padding-bottom: 128px;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+
+    header .content {
+        padding: 0;
+    }
+
+    header .content h1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #fff;
+    }
+
+    header .content hr {
+        width: 60px;
+        height: 4px;
+        margin: 24px auto;
+        background: #f4623a;
+        border: none;
+    }
+
+    header .ps {
+        font-size: 16px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.75);
+        margin-bottom: 32px;
+        padding: 0 16px;
+    }
+
+    header a {
+        padding: 16px 32px;
+        font-size: 14px;
+        border-radius: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    /* started  */
+    .started {
+        padding: 64px 24px;
+        text-align: center;
+    }
+
+    .started h2 {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .started .ps {
+        font-size: 15px;
+        line-height: 1.6;
+        max-width: 100%;
+    }
+
+    .started a {
+        margin-top: 20px;
+        padding: 16px 32px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    /* services  */
+    .services {
+        padding: 64px 24px;
+        text-align: center;
+    }
+
+    .services .service-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .service {
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* portfolio  */
+    .photos {
+        display: block;
+    }
+
+    .photo-item {
+        width: 100%;
+        height: 240px;
+        margin-bottom: 16px;
+    }
+
+    /* cta  */
+    .cta {
+        padding: 96px 24px;
+        text-align: center;
+    }
+.content{
+    padding: 0;
+}
+    .cta h2 {
+        font-size: 28px;
+    }
+
+    .cta a {
+        width: 100%;
+        padding: 16px 32px;
+        font-size: 14px;
+    }
+
+    /* contact  */
+    .contact {
+        padding: 64px 24px;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    /* footer  */
+    footer {
+        padding: 32px;
+    }
 }
